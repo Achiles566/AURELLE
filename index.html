@@ -1,0 +1,3045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AURELLE — Modern Pakistani Fashion</title>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2324211e'/%3E%3Crect x='18' y='18' width='64' height='64' fill='none' stroke='%239a7864' stroke-width='4' transform='rotate(45 50 50)'/%3E%3Ctext x='50' y='65' text-anchor='middle' font-family='Georgia,serif' font-size='48' fill='%23fffdf9'%3EA%3C/text%3E%3C/svg%3E">
+<meta name="description"
+content="AURELLE — Contemporary Pakistani fashion, refined silhouettes and timeless essentials.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --background: #f7f4ef;
+    --surface: #eee9e1;
+    --white: #fffdf9;
+    --text: #24211e;
+    --muted: #77716a;
+    --border: #dcd5cb;
+    --accent: #9a7864;
+    --dark: #24211e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: "DM Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 78px;
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(247, 244, 239, 0.94);
+    backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid rgba(36, 33, 30, 0.08);
+}
+
+.nav {
+    width: min(1320px, 92%);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================================
+   AURELLE LOGO
+========================================================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.logo-mark {
+    width: 39px;
+    height: 39px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--text);
+
+    transform: rotate(45deg);
+}
+
+.logo-mark::before {
+    content: "";
+
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+
+    border: 1px solid var(--accent);
+}
+
+.logo-letter {
+    position: relative;
+
+    transform: rotate(-45deg);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logo-name {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 31px;
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    line-height: 1;
+}
+
+.logo-tagline {
+    margin-top: 4px;
+
+    color: var(--muted);
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 38px;
+
+    list-style: none;
+
+    font-size: 11px;
+
+    letter-spacing: 1.8px;
+
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 1px;
+
+    background: var(--text);
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   NAV ACTIONS
+========================================================= */
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+}
+
+.icon-btn {
+    width: 38px;
+    height: 38px;
+
+    display: grid;
+    place-items: center;
+
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 19px;
+}
+
+.cart-button {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+
+    top: 1px;
+    right: 0;
+
+    width: 17px;
+    height: 17px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--dark);
+
+    color: white;
+
+    font-size: 9px;
+}
+
+.menu-button {
+    display: none;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+
+    padding-top: 78px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+
+    padding: 90px clamp(35px, 8vw, 120px);
+}
+
+.hero-inner {
+    max-width: 610px;
+}
+
+.eyebrow {
+    margin-bottom: 24px;
+
+    color: var(--accent);
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin-bottom: 30px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(70px, 8vw, 120px);
+
+    font-weight: 500;
+
+    line-height: 0.82;
+
+    letter-spacing: -5px;
+}
+
+.hero h1 em {
+    font-style: italic;
+}
+
+.hero-description {
+    max-width: 470px;
+
+    margin-bottom: 36px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 16px 28px;
+
+    border: 1px solid var(--dark);
+
+    background: transparent;
+
+    color: var(--text);
+
+    cursor: pointer;
+
+    font-size: 10px;
+
+    letter-spacing: 1.8px;
+
+    text-transform: uppercase;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--dark);
+
+    color: white;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.hero-image {
+    min-height: calc(100vh - 78px);
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.04),
+            rgba(0,0,0,.18)
+        ),
+        url("https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=1500&q=90")
+        center / cover;
+}
+
+.hero-label {
+    position: absolute;
+
+    right: 35px;
+    bottom: 35px;
+
+    color: white;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   MARQUEE
+========================================================= */
+
+.marquee {
+    overflow: hidden;
+
+    padding: 18px 0;
+
+    background: var(--surface);
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.marquee-track {
+    display: flex;
+
+    width: max-content;
+
+    animation: marquee 25s linear infinite;
+}
+
+.marquee span {
+    margin: 0 30px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 22px;
+
+    font-style: italic;
+}
+
+@keyframes marquee {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+.section {
+    padding: 115px 5%;
+}
+
+.section-header {
+    display: flex;
+
+    align-items: end;
+    justify-content: space-between;
+
+    margin-bottom: 48px;
+}
+
+.section-title {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 62px;
+
+    font-weight: 500;
+
+    line-height: .9;
+}
+
+.section-description {
+    max-width: 380px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   COLLECTIONS
+========================================================= */
+
+.collections {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.collection {
+    height: 550px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.collection img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform .7s;
+}
+
+.collection:hover img {
+    transform: scale(1.06);
+}
+
+.collection::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            transparent 40%,
+            rgba(0,0,0,.68)
+        );
+}
+
+.collection-content {
+    position: absolute;
+
+    left: 30px;
+    bottom: 32px;
+
+    z-index: 2;
+
+    color: white;
+}
+
+.collection-content small {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.collection-content h3 {
+    margin-top: 5px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 40px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   PRODUCTS
+========================================================= */
+
+.product-controls {
+    display: flex;
+
+    gap: 9px;
+
+    flex-wrap: wrap;
+}
+
+.filter {
+    padding: 10px 17px;
+
+    border: 1px solid var(--border);
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    transition: .25s;
+}
+
+.filter:hover,
+.filter.active {
+    background: var(--dark);
+
+    color: white;
+
+    border-color: var(--dark);
+}
+
+.products {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+}
+
+.product {
+    cursor: pointer;
+}
+
+.product-image {
+    height: 450px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #e8e1d8;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform .6s;
+}
+
+.product:hover .product-image img {
+    transform: scale(1.045);
+}
+
+.product-label {
+    position: absolute;
+
+    top: 14px;
+    left: 14px;
+
+    z-index: 2;
+
+    padding: 7px 10px;
+
+    background: white;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.heart {
+    position: absolute;
+
+    top: 14px;
+    right: 14px;
+
+    z-index: 3;
+
+    width: 36px;
+    height: 36px;
+
+    border: 0;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.92);
+
+    cursor: pointer;
+
+    font-size: 17px;
+}
+
+.product-info {
+    padding-top: 17px;
+}
+
+.product-info h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 24px;
+
+    font-weight: 600;
+}
+
+.product-info p {
+    margin-top: 5px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+}
+
+.product-price {
+    margin-top: 9px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: var(--surface);
+}
+
+.about-image {
+    min-height: 680px;
+
+    background:
+        url("https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=1300&q=90")
+        center / cover;
+}
+
+.about-content {
+    padding: 90px clamp(35px, 8vw, 115px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.about-content h2 {
+    margin-bottom: 30px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 68px;
+
+    font-weight: 500;
+
+    line-height: .9;
+}
+
+.about-content p {
+    max-width: 480px;
+
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.features {
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    border-top: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.feature {
+    padding: 50px 35px;
+
+    text-align: center;
+
+    border-right: 1px solid var(--border);
+}
+
+.feature:last-child {
+    border-right: 0;
+}
+
+.feature-icon {
+    margin-bottom: 15px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+}
+
+.feature h3 {
+    margin-bottom: 8px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px;
+}
+
+.feature p {
+    color: var(--muted);
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   NEWSLETTER
+========================================================= */
+
+.newsletter {
+    padding: 110px 20px;
+
+    text-align: center;
+
+    background: var(--dark);
+
+    color: white;
+}
+
+.newsletter h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 65px;
+
+    font-weight: 500;
+}
+
+.newsletter p {
+    max-width: 450px;
+
+    margin: 16px auto 30px;
+
+    color: #aaa49e;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+.newsletter-form {
+    max-width: 480px;
+
+    margin: auto;
+
+    display: flex;
+
+    border-bottom: 1px solid #77716b;
+}
+
+.newsletter-form input {
+    flex: 1;
+
+    padding: 15px 0;
+
+    border: 0;
+
+    outline: 0;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 13px;
+}
+
+.newsletter-form input::placeholder {
+    color: #88817a;
+}
+
+.newsletter-form button {
+    border: 0;
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 60px 5% 25px;
+
+    background: var(--dark);
+
+    color: white;
+
+    border-top: 1px solid #393530;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    gap: 50px;
+}
+
+.footer-brand {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.footer-logo-mark {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #eee;
+
+    transform: rotate(45deg);
+}
+
+.footer-logo-letter {
+    transform: rotate(-45deg);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 21px;
+}
+
+.footer-logo {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 40px;
+
+    letter-spacing: 5px;
+}
+
+.footer-description {
+    max-width: 330px;
+
+    margin-top: 18px;
+
+    color: #aaa49d;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+.footer-column h4 {
+    margin-bottom: 20px;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.footer-column a {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #aaa49d;
+
+    font-size: 12px;
+
+    transition: .2s;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.copyright {
+    margin-top: 60px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #393530;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #77716b;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   CART
+========================================================= */
+
+.overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1999;
+
+    background: rgba(0,0,0,.45);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .3s;
+}
+
+.overlay.show {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+.cart-drawer {
+    position: fixed;
+
+    top: 0;
+    right: -440px;
+
+    z-index: 2000;
+
+    width: min(440px,100%);
+    height: 100%;
+
+    padding: 30px;
+
+    background: var(--white);
+
+    transition: right .4s;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.cart-drawer.show {
+    right: 0;
+}
+
+.cart-header {
+    padding-bottom: 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.cart-header h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 36px;
+
+    font-weight: 500;
+}
+
+.close-cart {
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 25px;
+}
+
+.cart-items {
+    flex: 1;
+
+    padding: 25px 0;
+
+    overflow-y: auto;
+}
+
+.empty-cart {
+    margin-top: 90px;
+
+    text-align: center;
+
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+.cart-item {
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 22px;
+}
+
+.cart-item img {
+    width: 78px;
+    height: 95px;
+
+    object-fit: cover;
+}
+
+.cart-item-info {
+    flex: 1;
+}
+
+.cart-item-info h4 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 21px;
+}
+
+.cart-item-info p {
+    margin-top: 4px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+}
+
+.remove-item {
+    margin-top: 10px;
+
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    text-decoration: underline;
+
+    font-size: 10px;
+}
+
+.cart-footer {
+    padding-top: 22px;
+
+    border-top: 1px solid var(--border);
+}
+
+.cart-total {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 26px;
+}
+
+.checkout-button {
+    width: 100%;
+
+    background: var(--dark);
+
+    color: white;
+}
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+.toast {
+    position: fixed;
+
+    left: 50%;
+    bottom: 25px;
+
+    z-index: 3000;
+
+    padding: 14px 23px;
+
+    background: var(--dark);
+
+    color: white;
+
+    font-size: 12px;
+
+    transform: translate(-50%,25px);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: .3s;
+}
+
+.toast.show {
+    opacity: 1;
+
+    transform: translate(-50%,0);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:1000px) {
+
+    .nav-links {
+        position: fixed;
+
+        top: 78px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 30px;
+
+        flex-direction: column;
+
+        background: var(--background);
+
+        border-bottom: 1px solid var(--border);
+
+        transform: translateY(-150%);
+
+        transition: .35s;
+    }
+
+    .nav-links.open {
+        transform: translateY(0);
+    }
+
+    .menu-button {
+        display: grid;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        padding: 90px 7% 75px;
+    }
+
+    .hero-image {
+        min-height: 75vh;
+    }
+
+    .collections {
+        grid-template-columns: 1fr;
+    }
+
+    .collection {
+        height: 500px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .product-image {
+        height: 420px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        min-height: 560px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        border-right: 0;
+
+        border-bottom: 1px solid var(--border);
+    }
+
+    .feature:last-child {
+        border-bottom: 0;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media(max-width:600px) {
+
+    .header {
+        height: 68px;
+    }
+
+    .logo-mark {
+        width: 32px;
+        height: 32px;
+    }
+
+    .logo-mark::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logo-letter {
+        font-size: 20px;
+    }
+
+    .logo-name {
+        font-size: 25px;
+
+        letter-spacing: 4px;
+    }
+
+    .logo-tagline {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 68px;
+    }
+
+    .hero h1 {
+        font-size: 68px;
+
+        letter-spacing: -3px;
+    }
+
+    .hero-image {
+        min-height: 65vh;
+    }
+
+    .section {
+        padding: 80px 5%;
+    }
+
+    .section-header {
+        display: block;
+    }
+
+    .section-description {
+        margin-top: 20px;
+    }
+
+    .section-title {
+        font-size: 50px;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 15px;
+    }
+
+    .product-image {
+        height: 285px;
+    }
+
+    .product-info h3 {
+        font-size: 21px;
+    }
+
+    .product-info p {
+        font-size: 11px;
+    }
+
+    .product-price {
+        font-size: 12px;
+    }
+
+    .about-content {
+        padding: 75px 7%;
+    }
+
+    .about-content h2 {
+        font-size: 54px;
+    }
+
+    .newsletter h2 {
+        font-size: 50px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .copyright {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="header">
+
+<nav class="nav">
+
+
+<!-- AURELLE BRAND -->
+
+<a href="#" class="brand">
+
+<div class="logo-mark">
+
+<span class="logo-letter">
+A
+</span>
+
+</div>
+
+<div>
+
+<div class="logo-name">
+AURELLE
+</div>
+
+<div class="logo-tagline">
+Modern Pakistani Fashion
+</div>
+
+</div>
+
+</a>
+
+
+<!-- NAVIGATION -->
+
+<ul class="nav-links" id="navLinks">
+
+<li>
+<a href="#new">
+New In
+</a>
+</li>
+
+<li>
+<a href="#collections">
+Collections
+</a>
+</li>
+
+<li>
+<a href="#about">
+About
+</a>
+</li>
+
+<li>
+<a href="#contact">
+Contact
+</a>
+</li>
+
+</ul>
+
+
+<!-- ACTIONS -->
+
+<div class="nav-actions">
+
+<button
+class="icon-btn"
+id="searchButton"
+aria-label="Search">
+
+⌕
+
+</button>
+
+
+<button
+class="icon-btn cart-button"
+id="cartButton"
+aria-label="Shopping bag">
+
+♡
+
+<span
+class="cart-count"
+id="cartCount">
+
+0
+
+</span>
+
+</button>
+
+
+<button
+class="icon-btn menu-button"
+id="menuButton"
+aria-label="Menu">
+
+☰
+
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section class="hero">
+
+
+<div class="hero-content">
+
+<div class="hero-inner">
+
+<p class="eyebrow">
+Autumn / Winter 2026
+</p>
+
+
+<h1>
+
+Quiet<br>
+
+<em>luxury</em><br>
+
+redefined.
+
+</h1>
+
+
+<p class="hero-description">
+
+AURELLE brings together modern silhouettes,
+traditional craftsmanship and carefully selected
+fabrics to create pieces made for the
+contemporary woman.
+
+</p>
+
+
+<a href="#new" class="btn">
+
+Discover the collection
+
+<span>
+→
+</span>
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-image">
+
+<div class="hero-label">
+AURELLE / 2026
+</div>
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     MARQUEE
+========================================================= -->
+
+<div class="marquee">
+
+<div class="marquee-track">
+
+<span>
+Designed in Pakistan
+</span>
+
+<span>✦</span>
+
+<span>
+Timeless by Design
+</span>
+
+<span>✦</span>
+
+<span>
+Made with Intention
+</span>
+
+<span>✦</span>
+
+<span>
+Premium Fabrics
+</span>
+
+<span>✦</span>
+
+<span>
+Designed in Pakistan
+</span>
+
+<span>✦</span>
+
+<span>
+Timeless by Design
+</span>
+
+<span>✦</span>
+
+<span>
+Made with Intention
+</span>
+
+<span>✦</span>
+
+<span>
+Premium Fabrics
+</span>
+
+<span>✦</span>
+
+</div>
+
+</div>
+
+
+
+<!-- =========================================================
+     COLLECTIONS
+========================================================= -->
+
+<section
+class="section"
+id="collections">
+
+
+<div class="section-header">
+
+
+<div>
+
+<p class="eyebrow">
+Explore
+</p>
+
+<h2 class="section-title">
+Collections
+</h2>
+
+</div>
+
+
+<p class="section-description">
+
+Thoughtfully designed collections for everyday
+elegance, festive moments and everything in between.
+
+</p>
+
+</div>
+
+
+
+<div class="collections">
+
+
+<div class="collection">
+
+<img
+src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1000&q=90"
+alt="Essential collection">
+
+<div class="collection-content">
+
+<small>
+01 — Everyday
+</small>
+
+<h3>
+Essential Edit
+</h3>
+
+</div>
+
+</div>
+
+
+
+<div class="collection">
+
+<img
+src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?auto=format&fit=crop&w=1000&q=90"
+alt="Festive collection">
+
+<div class="collection-content">
+
+<small>
+02 — Festive
+</small>
+
+<h3>
+Occasion Wear
+</h3>
+
+</div>
+
+</div>
+
+
+
+<div class="collection">
+
+<img
+src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=90"
+alt="Contemporary collection">
+
+<div class="collection-content">
+
+<small>
+03 — Modern
+</small>
+
+<h3>
+Contemporary
+</h3>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRODUCTS
+========================================================= -->
+
+<section
+class="section"
+id="new">
+
+
+<div class="section-header">
+
+
+<div>
+
+<p class="eyebrow">
+New Arrivals
+</p>
+
+<h2 class="section-title">
+The Edit
+</h2>
+
+</div>
+
+
+<div class="product-controls">
+
+<button
+class="filter active"
+data-filter="all">
+
+All
+
+</button>
+
+<button
+class="filter"
+data-filter="pret">
+
+Pret
+
+</button>
+
+<button
+class="filter"
+data-filter="festive">
+
+Festive
+
+</button>
+
+<button
+class="filter"
+data-filter="modern">
+
+Modern
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<div
+class="products"
+id="products">
+
+
+<!-- PRODUCT 1 -->
+
+<article
+class="product"
+data-category="pret">
+
+<div class="product-image">
+
+<span class="product-label">
+New
+</span>
+
+<button
+class="heart"
+onclick="event.stopPropagation(); toggleHeart(this)">
+
+♡
+
+</button>
+
+<img
+src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=900&q=90"
+alt="Meher Kurta">
+
+</div>
+
+<div class="product-info">
+
+<h3>
+Meher Kurta
+</h3>
+
+<p>
+Embroidered Cotton
+</p>
+
+<div class="product-price">
+PKR 8,900
+</div>
+
+</div>
+
+</article>
+
+
+
+<!-- PRODUCT 2 -->
+
+<article
+class="product"
+data-category="festive">
+
+<div class="product-image">
+
+<span class="product-label">
+Bestseller
+</span>
+
+<button
+class="heart"
+onclick="event.stopPropagation(); toggleHeart(this)">
+
+♡
+
+</button>
+
+<img
+src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?auto=format&fit=crop&w=900&q=90"
+alt="Raya Ensemble">
+
+</div>
+
+<div class="product-info">
+
+<h3>
+Raya Ensemble
+</h3>
+
+<p>
+Organza & Silk
+</p>
+
+<div class="product-price">
+PKR 18,500
+</div>
+
+</div>
+
+</article>
+
+
+
+<!-- PRODUCT 3 -->
+
+<article
+class="product"
+data-category="modern">
+
+<div class="product-image">
+
+<button
+class="heart"
+onclick="event.stopPropagation(); toggleHeart(this)">
+
+♡
+
+</button>
+
+<img
+src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=900&q=90"
+alt="Noor Shirt">
+
+</div>
+
+<div class="product-info">
+
+<h3>
+Noor Shirt
+</h3>
+
+<p>
+Premium Lawn
+</p>
+
+<div class="product-price">
+PKR 6,900
+</div>
+
+</div>
+
+</article>
+
+
+
+<!-- PRODUCT 4 -->
+
+<article
+class="product"
+data-category="pret">
+
+<div class="product-image">
+
+<span class="product-label">
+Limited
+</span>
+
+<button
+class="heart"
+onclick="event.stopPropagation(); toggleHeart(this)">
+
+♡
+
+</button>
+
+<img
+src="https://images.unsplash.com/photo-1605763240000-7e93b172d754?auto=format&fit=crop&w=900&q=90"
+alt="Zara Co-ord">
+
+</div>
+
+<div class="product-info">
+
+<h3>
+Zara Co-ord
+</h3>
+
+<p>
+Textured Linen
+</p>
+
+<div class="product-price">
+PKR 11,900
+</div>
+
+</div>
+
+</article>
+
+
+
+<!-- PRODUCT 5 -->
+
+<article
+class="product"
+data-category="festive">
+
+<div class="product-image">
+
+<button
+class="heart"
+onclick="event.stopPropagation(); toggleHeart(this)">
+
+♡
+
+</button>
+
+<img
+src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=900&q=90"
+alt="Mahira Set">
+
+</div>
+
+<div class="product-info">
+
+<h3>
+Mahira Set
+</h3>
+
+<p>
+Chiffon & Embroidery
+</p>
+
+<div class="product-price">
+PKR 21,900
+</div>
+
+</div>
+
+</article>
+
+
+
+<!-- PRODUCT 6 -->
+
+<article
+class="product"
+data-category="modern">
+
+<div class="product-image">
+
+<button
+class="heart"
+onclick="event.stopPropagation(); toggleHeart(this)">
+
+♡
+
+</button>
+
+<img
+src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=90"
+alt="Ayla Dress">
+
+</div>
+
+<div class="product-info">
+
+<h3>
+Ayla Dress
+</h3>
+
+<p>
+Soft Cotton
+</p>
+
+<div class="product-price">
+PKR 7,500
+</div>
+
+</div>
+
+</article>
+
+
+
+<!-- PRODUCT 7 -->
+
+<article
+class="product"
+data-category="pret">
+
+<div class="product-image">
+
+<span class="product-label">
+New
+</span>
+
+<button
+class="heart"
+onclick="event.stopPropagation(); toggleHeart(this)">
+
+♡
+
+</button>
+
+<img
+src="https://images.unsplash.com/photo-1612336307429-8a898d10e223?auto=format&fit=crop&w=900&q=90"
+alt="Haya Tunic">
+
+</div>
+
+<div class="product-info">
+
+<h3>
+Haya Tunic
+</h3>
+
+<p>
+Printed Lawn
+</p>
+
+<div class="product-price">
+PKR 9,400
+</div>
+
+</div>
+
+</article>
+
+
+
+<!-- PRODUCT 8 -->
+
+<article
+class="product"
+data-category="festive">
+
+<div class="product-image">
+
+<span class="product-label">
+Signature
+</span>
+
+<button
+class="heart"
+onclick="event.stopPropagation(); toggleHeart(this)">
+
+♡
+
+</button>
+
+<img
+src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=900&q=90"
+alt="Elara Formal">
+
+</div>
+
+<div class="product-info">
+
+<h3>
+Elara Formal
+</h3>
+
+<p>
+Raw Silk & Pearl
+</p>
+
+<div class="product-price">
+PKR 24,900
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section
+class="about"
+id="about">
+
+
+<div class="about-image"></div>
+
+
+<div class="about-content">
+
+<p class="eyebrow">
+The AURELLE Story
+</p>
+
+
+<h2>
+Modern<br>
+heritage.
+</h2>
+
+
+<p>
+
+AURELLE was created to celebrate the beauty
+of Pakistani craftsmanship through a contemporary
+lens.
+
+</p>
+
+
+<p>
+
+We believe clothing should feel effortless,
+refined and personal. Every piece is designed
+with a focus on quality, comfort and longevity.
+
+</p>
+
+
+<a href="#" class="btn">
+
+Our Story
+
+<span>
+→
+</span>
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FEATURES
+========================================================= -->
+
+<section class="features">
+
+
+<div class="feature">
+
+<div class="feature-icon">
+✦
+</div>
+
+<h3>
+Premium Quality
+</h3>
+
+<p>
+Thoughtfully selected fabrics and carefully
+finished details.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+◇
+</div>
+
+<h3>
+Made in Pakistan
+</h3>
+
+<p>
+Proudly designed and crafted with local expertise.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+○
+</div>
+
+<h3>
+Easy Returns
+</h3>
+
+<p>
+A simple and convenient return experience
+for every order.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     NEWSLETTER
+========================================================= -->
+
+<section class="newsletter">
+
+<h2>
+Stay in the know.
+</h2>
+
+<p>
+
+Sign up to receive updates about new collections,
+exclusive pieces and seasonal releases.
+
+</p>
+
+
+<form
+class="newsletter-form"
+onsubmit="subscribe(event)">
+
+<input
+type="email"
+placeholder="Your email address"
+required>
+
+<button type="submit">
+Subscribe →
+</button>
+
+</form>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer id="contact">
+
+
+<div class="footer-grid">
+
+
+<div>
+
+<div class="footer-brand">
+
+<div class="footer-logo-mark">
+
+<span class="footer-logo-letter">
+A
+</span>
+
+</div>
+
+<div class="footer-logo">
+AURELLE
+</div>
+
+</div>
+
+
+<p class="footer-description">
+
+Contemporary Pakistani fashion designed
+around timeless silhouettes, thoughtful
+materials and quiet elegance.
+
+</p>
+
+</div>
+
+
+
+<div class="footer-column">
+
+<h4>
+Shop
+</h4>
+
+<a href="#new">
+New In
+</a>
+
+<a href="#collections">
+Collections
+</a>
+
+<a href="#new">
+Pret
+</a>
+
+<a href="#new">
+Festive
+</a>
+
+</div>
+
+
+
+<div class="footer-column">
+
+<h4>
+Customer Care
+</h4>
+
+<a href="#">
+Shipping
+</a>
+
+<a href="#">
+Returns
+</a>
+
+<a href="#">
+Size Guide
+</a>
+
+<a href="#">
+FAQs
+</a>
+
+</div>
+
+
+
+<div class="footer-column">
+
+<h4>
+Company
+</h4>
+
+<a href="#about">
+About AURELLE
+</a>
+
+<a href="#">
+Careers
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+<a href="#">
+Privacy
+</a>
+
+</div>
+
+
+</div>
+
+
+
+<div class="copyright">
+
+<span>
+© 2026 AURELLE. All rights reserved.
+</span>
+
+<span>
+Made in Pakistan
+</span>
+
+</div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     CART
+========================================================= -->
+
+<div
+class="overlay"
+id="overlay">
+</div>
+
+
+<aside
+class="cart-drawer"
+id="cartDrawer">
+
+
+<div class="cart-header">
+
+<h2>
+Your Bag
+</h2>
+
+<button
+class="close-cart"
+id="closeCart">
+
+×
+
+</button>
+
+</div>
+
+
+<div
+class="cart-items"
+id="cartItems">
+
+<div class="empty-cart">
+
+Your bag is currently empty.
+
+</div>
+
+</div>
+
+
+<div class="cart-footer">
+
+<div class="cart-total">
+
+<span>
+Total
+</span>
+
+<span id="cartTotal">
+PKR 0
+</span>
+
+</div>
+
+
+<button
+class="btn checkout-button"
+onclick="checkout()">
+
+Proceed to Checkout
+
+</button>
+
+</div>
+
+</aside>
+
+
+
+<div
+class="toast"
+id="toast">
+</div>
+
+
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+const menuButton =
+document.getElementById("menuButton");
+
+const navLinks =
+document.getElementById("navLinks");
+
+
+menuButton.addEventListener("click", () => {
+
+    navLinks.classList.toggle("open");
+
+});
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("open");
+
+    });
+
+});
+
+
+
+/* =========================================================
+   PRODUCT FILTER
+========================================================= */
+
+const filterButtons =
+document.querySelectorAll(".filter");
+
+const productCards =
+document.querySelectorAll(".product");
+
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        filterButtons.forEach(btn => {
+
+            btn.classList.remove("active");
+
+        });
+
+
+        button.classList.add("active");
+
+
+        const category =
+        button.dataset.filter;
+
+
+        productCards.forEach(product => {
+
+            if (
+                category === "all" ||
+                product.dataset.category === category
+            ) {
+
+                product.style.display = "";
+
+            } else {
+
+                product.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+});
+
+
+
+/* =========================================================
+   WISHLIST
+========================================================= */
+
+function toggleHeart(button) {
+
+    if (
+        button.textContent.trim() === "♡"
+    ) {
+
+        button.textContent = "♥";
+
+        showToast(
+            "Added to wishlist"
+        );
+
+    } else {
+
+        button.textContent = "♡";
+
+        showToast(
+            "Removed from wishlist"
+        );
+
+    }
+
+}
+
+
+
+/* =========================================================
+   CART
+========================================================= */
+
+let cart = [];
+
+
+const cartButton =
+document.getElementById("cartButton");
+
+const cartDrawer =
+document.getElementById("cartDrawer");
+
+const overlay =
+document.getElementById("overlay");
+
+const closeCart =
+document.getElementById("closeCart");
+
+
+function openCart() {
+
+    cartDrawer.classList.add("show");
+
+    overlay.classList.add("show");
+
+}
+
+
+function closeCartDrawer() {
+
+    cartDrawer.classList.remove("show");
+
+    overlay.classList.remove("show");
+
+}
+
+
+cartButton.addEventListener(
+    "click",
+    openCart
+);
+
+
+closeCart.addEventListener(
+    "click",
+    closeCartDrawer
+);
+
+
+overlay.addEventListener(
+    "click",
+    closeCartDrawer
+);
+
+
+
+/* =========================================================
+   ADD PRODUCTS
+========================================================= */
+
+productCards.forEach(product => {
+
+    product.addEventListener("click", () => {
+
+
+        const name =
+        product
+        .querySelector("h3")
+        .textContent
+        .trim();
+
+
+        const priceText =
+        product
+        .querySelector(".product-price")
+        .textContent;
+
+
+        const price =
+        Number(
+            priceText.replace(/[^\d]/g, "")
+        );
+
+
+        const image =
+        product
+        .querySelector("img")
+        .src;
+
+
+        cart.push({
+
+            name: name,
+
+            price: price,
+
+            image: image
+
+        });
+
+
+        updateCart();
+
+
+        showToast(
+            name + " added to your bag"
+        );
+
+
+        openCart();
+
+    });
+
+});
+
+
+
+/* =========================================================
+   UPDATE CART
+========================================================= */
+
+function updateCart() {
+
+    const cartItems =
+    document.getElementById("cartItems");
+
+    const cartCount =
+    document.getElementById("cartCount");
+
+    const cartTotal =
+    document.getElementById("cartTotal");
+
+
+    cartCount.textContent =
+    cart.length;
+
+
+    if (cart.length === 0) {
+
+        cartItems.innerHTML = `
+
+            <div class="empty-cart">
+                Your bag is currently empty.
+            </div>
+
+        `;
+
+        cartTotal.textContent =
+        "PKR 0";
+
+        return;
+
+    }
+
+
+    let total = 0;
+
+
+    cartItems.innerHTML = "";
+
+
+    cart.forEach((item, index) => {
+
+        total += item.price;
+
+
+        const element =
+        document.createElement("div");
+
+
+        element.className =
+        "cart-item";
+
+
+        element.innerHTML = `
+
+            <img
+                src="${item.image}"
+                alt="${item.name}"
+            >
+
+            <div class="cart-item-info">
+
+                <h4>
+                    ${item.name}
+                </h4>
+
+                <p>
+                    PKR ${item.price.toLocaleString()}
+                </p>
+
+                <button
+                    class="remove-item"
+                    onclick="removeItem(${index})">
+
+                    Remove
+
+                </button>
+
+            </div>
+
+        `;
+
+
+        cartItems.appendChild(element);
+
+    });
+
+
+    cartTotal.textContent =
+    "PKR " + total.toLocaleString();
+
+}
+
+
+
+/* =========================================================
+   REMOVE CART ITEM
+========================================================= */
+
+function removeItem(index) {
+
+    cart.splice(index, 1);
+
+    updateCart();
+
+}
+
+
+
+/* =========================================================
+   CHECKOUT
+========================================================= */
+
+function checkout() {
+
+    if (cart.length === 0) {
+
+        showToast(
+            "Your bag is empty"
+        );
+
+        return;
+
+    }
+
+
+    /*
+       Demo checkout.
+
+       A real client website could later
+       connect this to a checkout page,
+       payment gateway and order database.
+    */
+
+
+    showToast(
+        "Checkout demo activated"
+    );
+
+}
+
+
+
+/* =========================================================
+   NEWSLETTER
+========================================================= */
+
+function subscribe(event) {
+
+    event.preventDefault();
+
+
+    showToast(
+        "Thank you for subscribing!"
+    );
+
+
+    event.target.reset();
+
+}
+
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+document
+.getElementById("searchButton")
+.addEventListener("click", () => {
+
+    showToast(
+        "Search feature coming soon"
+    );
+
+});
+
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+let toastTimer;
+
+
+function showToast(message) {
+
+    const toast =
+    document.getElementById("toast");
+
+
+    toast.textContent =
+    message;
+
+
+    toast.classList.add("show");
+
+
+    clearTimeout(toastTimer);
+
+
+    toastTimer =
+    setTimeout(() => {
+
+        toast.classList.remove("show");
+
+    }, 2400);
+
+}
+
+</script>
+
+</body>
+</html>
